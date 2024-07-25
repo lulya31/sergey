@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Advanceds on АТТЕСТАЦИЯ</title>
+    <link>http://localhost:1313/tags/advanceds/</link>
+    <description>Recent content in Advanceds on АТТЕСТАЦИЯ</description>
+    <generator>Hugo</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Sun, 21 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/advanceds/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Архитектура</title>
+      <link>http://localhost:1313/advanced/architecture/</link>
+      <pubDate>Sun, 21 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/advanced/architecture/</guid>
+      <description>Архитектура Layered (слоистая) архитектура — это структура проектирования программного обеспечения, в которой система разбивается на несколько слоев или уровней. Каждый слой выполняет определенную функциональность и обладает строго определенными отношениями с другими слоями. В этой архитектуре каждый слой является независимым и может быть изменен без влияния на другие слои.&#xA;Принцип слоистой архитектуры состоит в том, чтобы разделить систему на отдельные уровни, где каждый уровень предоставляет определенные сервисы или функции. Обычно слоистая архитектура состоит из трех основных слоев: представления (presentation layer), бизнес-логики (business logic layer) и слоя доступа к данным (data access layer).</description>
+    </item>
+  </channel>
+</rss>

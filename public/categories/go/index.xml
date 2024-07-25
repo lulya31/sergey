@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on АТТЕСТАЦИЯ</title>
+    <link>http://localhost:1313/categories/go/</link>
+    <description>Recent content in Go on АТТЕСТАЦИЯ</description>
+    <generator>Hugo</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Mon, 22 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTTP</title>
+      <link>http://localhost:1313/advanced/introduction-aux-modeles-hugo/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/advanced/introduction-aux-modeles-hugo/</guid>
+      <description>Go Back&#xA;1. HTTP 2. Стартовая строка 3. Заголовки HTTP (HyperText Transfer Protocol) — «протокол передачи гипертекста» представляет собой протокол прикладного уровня, используемый для доступа к ресурсам Всемирной Паутины. Под термином гипертекст следует понимать текст, в понятном для человека представлении, при этом содержащий ссылки на другие ресурсы.&#xA;В обмене информацией по HTTP-протоколу принимают участие клиент и сервер. Происходит это по следующей схеме:&#xA;Клиент запрашивает у сервера некоторый ресурс. Сервер обрабатывает запрос и возвращает клиенту ресурс, который был запрошен.</description>
+    </item>
+  </channel>
+</rss>

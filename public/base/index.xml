@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bases on АТТЕСТАЦИЯ</title>
+    <link>http://localhost:1313/base/</link>
+    <description>Recent content in Bases on АТТЕСТАЦИЯ</description>
+    <generator>Hugo</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Mon, 22 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/base/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/base/docker/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/base/docker/</guid>
+      <description>Go Back&#xA;1. Docker 2. Dockerfile 3. Docker compose 4. K8s 5 Lens Docker это платформа для контейнеризации приложений, которая позволяет упаковать приложение и его зависимости в единый контейнер. Этот контейнер можно запустить на любой системе, поддерживающей Docker, и он будет работать идентично независимо от окружения.&#xA;Образ (Image): Образ - это статический файл, содержащий все необходимое для запуска приложения, включая код, библиотеки и зависимости.&#xA;Контейнер (Container): Контейнер - это экземпляр образа, который можно запустить и остановить.</description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>http://localhost:1313/base/git/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/base/git/</guid>
+      <description>Go Back&#xA;1. Git 2. Gitflow Git — это система контроля версий, которая помогает отслеживать историю изменений в файлах.&#xA;1. gitignore:&#xA;Git рассматривает каждый файл в вашей рабочей копии как файл одного из трех нижеуказанных типов.&#xA;Отслеживаемый файл — файл, который был предварительно проиндексирован или зафиксирован в коммите.&#xA;Неотслеживаемый файл — файл, который не был проиндексирован или зафиксирован в коммите.&#xA;Игнорируемый файл — файл, явным образом помеченный для Git как файл, который необходимо игнорировать.</description>
+    </item>
+    <item>
+      <title>Переменные окружения</title>
+      <link>http://localhost:1313/base/env/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/base/env/</guid>
+      <description>Go Back&#xA;Переменные окружения — это набор значений, которые определяют поведение и настройки операционной системы, а также других программ, работающих в этой среде. Они могут быть использованы для хранения информации, которую используют различные приложения, и для настройки системных параметров. В веб-разработке они обычно используются для хранения секретных данных, таких как ключи API, пароли и других конфиденциальных данных.&#xA;Формат вывода очень простой: слева от знака равно расположено имя переменной, справа — значение.</description>
+    </item>
+    <item>
+      <title>Языки разметки</title>
+      <link>http://localhost:1313/base/markdownasciidoc/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/base/markdownasciidoc/</guid>
+      <description>Go Back&#xA;1. Markdown 2. Asciidoc 3. Plantuml 1. Markdown Синтаксис языка:&#xA;Верстка сайта:&#xA;2. Asciidoc Синтаксис языка:&#xA;Верстка сайта:&#xA;3. Plantuml Синтаксис языка:&#xA;Верстка сайта:</description>
+    </item>
+    <item>
+      <title>Bonus</title>
+      <link>http://localhost:1313/base/bonus/</link>
+      <pubDate>Sun, 21 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/base/bonus/</guid>
+      <description>Go Back&#xA;1. SCORE 2. Platformeco 3. Node js SCORE S каки сейчас проблемы; C причины; O результаты к которым хочу прийти; R ресурсы чтобы добиться цели; E эффект что будет если решу проблему; Platformeco Тестовые задания:&#xA;Выполненые задания:&#xA;Git:&#xA;Node js Node.js — это кроссплатформенная среда выполнения JavaScript, основанная на движке V8, которая позволяет запускать JavaScript-код вне браузера. Она предназначена для разработки серверных приложений и динамических веб-страниц, а также для создания программ командной строки</description>
+    </item>
+  </channel>
+</rss>

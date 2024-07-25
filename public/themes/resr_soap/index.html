@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="map[name:Hugo Authors]">
+<meta name="description" content="API (Application programming interface) — это контракт, который предоставляет программа. «Ко мне можно обращаться так и так, я обязуюсь делать то и это».
+REST REST API — это архитектурный подход, который устанавливает ограничения для API: как они должны быть устроены и какие функции поддерживать.
+Клиент-серверная модель (client-server model). Отсутствие состояния (statelessness). Кэширование (cacheability). Единообразие интерфейса (uniform interface). Многоуровневая система (layered system). Конечная точка – это адрес ресурса, который является пунктом доступа к системе извне." />
+<meta name="keywords" content=", go, golang, hugo, development" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/themes/resr_soap/" />
+
+
+    <title>
+        
+            Rest &amp; Soap &amp; grpc :: АТТЕСТАЦИЯ 
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="http://localhost:1313/main.949191c1dcc9c4a887997048b240354e47152016d821198f89448496ba42e491.css" integrity="sha256-lJGRwdzJxKiHmXBIskA1TkcVIBbYIRmPiUSElrpC5JE=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+    <link rel="manifest" href="http://localhost:1313/site.webmanifest">
+    <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="http://localhost:1313/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Rest &amp; Soap &amp; grpc">
+  <meta itemprop="description" content="API (Application programming interface) — это контракт, который предоставляет программа. «Ко мне можно обращаться так и так, я обязуюсь делать то и это».
+REST REST API — это архитектурный подход, который устанавливает ограничения для API: как они должны быть устроены и какие функции поддерживать.
+Клиент-серверная модель (client-server model). Отсутствие состояния (statelessness). Кэширование (cacheability). Единообразие интерфейса (uniform interface). Многоуровневая система (layered system). Конечная точка – это адрес ресурса, который является пунктом доступа к системе извне.">
+  <meta itemprop="datePublished" content="2024-07-22T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-22T00:00:00+00:00">
+  <meta itemprop="wordCount" content="690">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Go,Golang,Hugo,Development">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/"><meta name="twitter:title" content="Rest &amp; Soap &amp; grpc">
+<meta name="twitter:description" content="API (Application programming interface) — это контракт, который предоставляет программа. «Ко мне можно обращаться так и так, я обязуюсь делать то и это».
+REST REST API — это архитектурный подход, который устанавливает ограничения для API: как они должны быть устроены и какие функции поддерживать.
+Клиент-серверная модель (client-server model). Отсутствие состояния (statelessness). Кэширование (cacheability). Единообразие интерфейса (uniform interface). Многоуровневая система (layered system). Конечная точка – это адрес ресурса, который является пунктом доступа к системе извне.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/themes/resr_soap/">
+  <meta property="og:site_name" content="АТТЕСТАЦИЯ">
+  <meta property="og:title" content="Rest &amp; Soap &amp; grpc">
+  <meta property="og:description" content="API (Application programming interface) — это контракт, который предоставляет программа. «Ко мне можно обращаться так и так, я обязуюсь делать то и это».
+REST REST API — это архитектурный подход, который устанавливает ограничения для API: как они должны быть устроены и какие функции поддерживать.
+Клиент-серверная модель (client-server model). Отсутствие состояния (statelessness). Кэширование (cacheability). Единообразие интерфейса (uniform interface). Многоуровневая система (layered system). Конечная точка – это адрес ресурса, который является пунктом доступа к системе извне.">
+  <meta property="og:locale" content="ru-ru">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="themes">
+    <meta property="article:published_time" content="2024-07-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-22T00:00:00+00:00">
+    <meta property="article:tag" content="Go">
+    <meta property="article:tag" content="Golang">
+    <meta property="article:tag" content="Hugo">
+    <meta property="article:tag" content="Development">
+    <meta property="og:image" content="http://localhost:1313/">
+      <meta property="og:see_also" content="http://localhost:1313/themes/bd/">
+      <meta property="og:see_also" content="http://localhost:1313/themes/ddd/">
+      <meta property="og:see_also" content="http://localhost:1313/themes/architecture/">
+
+
+
+
+    <meta property="article:section" content="Development" />
+
+    <meta property="article:section" content="golang" />
+
+
+
+    <meta property="article:published_time" content="2024-07-22 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="http://localhost:1313/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">&gt;</span>
+            <span class="logo__text ">
+                $ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="http://localhost:1313/base/">Общие навыки</a></li><li><a href="http://localhost:1313/more/">Специализированные</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/themes/resr_soap/">Rest &amp; Soap &amp; grpc</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <p>API (Application programming interface) — это контракт, который предоставляет программа. «Ко мне можно обращаться так и так, я обязуюсь делать то и это».</p>
+<h3 id="rest">REST</h3>
+<p><em>REST API</em> — это архитектурный подход, который устанавливает ограничения для API: как они должны быть устроены и какие функции поддерживать.</p>
+<ul>
+<li>Клиент-серверная модель (client-server model).</li>
+<li>Отсутствие состояния (statelessness).</li>
+<li>Кэширование (cacheability).</li>
+<li>Единообразие интерфейса (uniform interface).</li>
+<li>Многоуровневая система (layered system).</li>
+</ul>
+<p><strong>Конечная точка</strong> – это адрес ресурса, который является пунктом доступа к системе извне.
+Клиенты отправляют HTTP-запросы серверу, обращаясь к конечным точкам, которые предоставляют ресурсы.
+REST может возвращать данные в любом формате (HTML, XML, JSON), но чаще всего это человеко-читаемый текстовый формат JSON.</p>
+<table>
+<thead>
+<tr>
+<th><strong>HTTP-метод</strong></th>
+<th><strong>Назначение</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td>Получить сведения о ресурсе</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>Создать новый ресурс</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td>Полностью обновить ресурс</td>
+</tr>
+<tr>
+<td>PATCH</td>
+<td>Частично обновить ресурс</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>Удалить ресурс</td>
+</tr>
+</tbody>
+</table>
+<h3 id="soap">SOAP</h3>
+<p><em>SOAP</em>(Simple Object Access Protocol) — это протокол обмена сообщениями между компьютерными системами.</p>
+<p><em>SOAP API</em> (Application Programming Interface) — это интерфейс, который позволяет взаимодействовать с удаленными сервисами или приложениями с использованием SOAP протокола. SOAP API основан на использовании XML для описания структуры и содержимого сообщений. Сообщения в SOAP API представляют собой XML-документы, которые содержат данные и вызовы методов для удаленного выполнения операций.</p>
+<p>Корректное SOAP-сообщение состоит из нескольких структурных элементов:</p>
+<ul>
+<li>
+<p>Envelope - корневой элемент, который определяет сообщение и пространство имен, использованное в документе;</p>
+</li>
+<li>
+<p>Header - содержит атрибуты сообщения, например: информация о безопасности или о сетевой маршрутизации;</p>
+</li>
+<li>
+<p>Body - содержит сообщение, которым обмениваются приложения;</p>
+</li>
+<li>
+<p>Fault - необязательный элемент, который предоставляет информацию об ошибках, которые произошли при обработке сообщений..</p>
+</li>
+</ul>
+<p><img src="https://blog.skillfactory.ru/wp-content/uploads/2023/02/soap-2-1670174.png" alt=""></p>
+<p><em>Пример сообщения:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;soap:Envelope</span> <span style="color:#a6e22e">xmlns_soap=</span><span style="color:#e6db74">&#34;http://www.w3.org/2003/05/soap-envelope/&#34;</span> <span style="color:#a6e22e">soap_encodingStyle=</span><span style="color:#e6db74">&#34;http://www.w3.org/2003/05/soap-encoding&#34;</span><span style="color:#f92672">&gt;</span> 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;soap:Body&gt;</span> <span style="color:#f92672">&lt;m:GetPrice</span> <span style="color:#a6e22e">xmlns_m=</span><span style="color:#e6db74">&#34;https://online-shop.ru/prices&#34;</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&lt;m:Item&gt;</span>Dell Vostro 3515-5371<span style="color:#f92672">&lt;/m:Item&gt;</span> 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/m:GetPrice&gt;</span> <span style="color:#f92672">&lt;/soap:Body&gt;</span> 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/soap:Envelope&gt;</span>
+</span></span></code></pre></div><h4 id="отличия">Отличия</h4>
+<table>
+<thead>
+<tr>
+<th>SOAP</th>
+<th>REST</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SOAP является протоколом сообщений</td>
+<td>REST является архитектурным стилем</td>
+</tr>
+<tr>
+<td>XML</td>
+<td>Различные форматы, чаще всего JSON.</td>
+</tr>
+<tr>
+<td>Может использовать разные транспортные протоколы, но чаще всего использует HTTP, SMTP, TCP и т. д.</td>
+<td>Использует преимущественно HTTP.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="grpc">gRPC</h3>
+<p><em>RPC</em> — это форма взаимодействия клиент-сервер, в которой используется вызов функции, а не обычный вызов HTTP. Идея в том, что мы можем вызвать и выполнить функцию где-то на удаленной системе, как если бы это была локальная функция.</p>
+<p>Клиент делает запрос на выполнение процедуры на удаленном сервере.
+Параметры процедуры передаются по сети на сторону сервера. Процедура выполняется на сервере и, наконец, результаты передаются обратно клиенту.</p>
+<p>gRPC воспроизводит этот архитектурный стиль взаимодействия клиент-сервер через вызовы функций.</p>
+<p><img src="https://wiki.merionet.ru/images/chto-takoe-grpc-i-protobuf/1.png" alt=""></p>
+<p>Он основан на протоколе HTTP/2 и использует бинарный формат сообщений Protocol Buffers вместо JSON, что обеспечивает более эффективную передачу данных</p>
+<p>**HTTP/2 **- это новая версия протокола HTTP, разработанная для повышения производительности и эффективности передачи данных в современных веб-приложениях. Основные особенности HTTP/2:
+<strong>Бинарный формат</strong>
+HTTP/2 использует бинарный формат вместо текстового, что позволяет более эффективно кодировать и передавать данные.</p>
+<p><strong>Мультиплексирование</strong>
+HTTP/2 поддерживает одновременную передачу нескольких запросов и ответов по одному TCP-соединению.</p>
+<p><strong>Сжатие заголовков</strong>
+HTTP/2 использует алгоритм сжатия заголовков, что уменьшает объем передаваемых данных.</p>
+<p><strong>gRPC</strong> - это фреймворк для построения высокопроизводительных распределенных систем, основанный на протоколах Protobuf и HTTP/2. Вот как работает архитектура gRPC:</p>
+<p><strong>Определение контракта сервиса</strong>
+Разработчики определяют интерфейс сервиса с помощью языка описания Protobuf.
+Этот контракт описывает методы сервиса, их входные и выходные параметры.
+<strong>Генерация кода</strong>
+Из Protobuf-описания автоматически генерируется код клиента и сервера на различных языках программирования.
+Это упрощает разработку и обеспечивает совместимость между компонентами.
+<strong>Взаимодействие по HTTP/2</strong>
+gRPC использует протокол HTTP/2 в качестве транспортного уровня.
+Это обеспечивает высокую производительность, эффективность и поддержку потоковой передачи данных.
+<strong>Использование Protobuf для сериализации</strong>
+Все данные, передаваемые между клиентом и сервером, сериализуются и десериализуются с помощью Protobuf.
+Это гарантирует компактность и эффективность передачи данных.</p>
+<p><strong>В gRPC, proto-контракт</strong> - это определение интерфейса сервиса, написанное на языке описания Protocol Buffers (protobuf). Он описывает методы сервиса, их входные и выходные параметры.
+Основные особенности proto-контракта в gRPC:
+Определение сервиса
+В proto-файле определяется сервис с методами, которые могут быть удаленно вызваны. Например:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-proto" data-lang="proto"><span style="display:flex;"><span><span style="color:#66d9ef">service</span> HelloService {<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>  <span style="color:#66d9ef">rpc</span> SayHello (HelloRequest) <span style="color:#66d9ef">returns</span> (HelloResponse);<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>}<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">message</span> <span style="color:#a6e22e">HelloRequest</span> {<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>  <span style="color:#66d9ef">string</span> name <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>}<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">message</span> <span style="color:#a6e22e">HelloResponse</span> {<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>  <span style="color:#66d9ef">string</span> <span style="color:#66d9ef">message</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>}<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>Описание сообщений
+Структура входных и выходных параметров методов описывается в виде сообщений protobuf. Сообщения имеют строго определенные поля с типами.
+Генерация кода
+Из proto-файла автоматически генерируется код клиента и сервера на различных языках программирования. Это упрощает разработку и обеспечивает совместимость между компонентами.
+Промежуточный контракт
+Proto-файл служит промежуточным контрактом между клиентом и сервером. Клиент и сервер должны иметь один и тот же proto-файл для корректного взаимодействия.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/go/">go</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/golang/">golang</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/hugo/">hugo</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/development/">development</a></span>
+        
+    </p>
+
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="http://localhost:1313/categories/development/">Development</a></span>
+        <span class="tag"><a href="http://localhost:1313/categories/golang/">golang</a></span>
+        
+    </p>
+
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2024</span>
+            <span><a href="http://localhost:1313/"></a></span>
+            <span></span>
+            <span><a href="http://localhost:1313/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="http://localhost:1313/bundle.min.85fad2de4f13fec3bcb3b3cb10430cdb44a7b4a9749b32938241a5c6e77718df7624f1002b880521fdc26e24ec1077fda214bf1cb36ee3045510760d09638cae.js" integrity="sha512-hfrS3k8T/sO8s7PLEEMM20SntKl0mzKTgkGlxud3GN92JPEAK4gFIf3CbiTsEHf9ohS/HLNu4wRVEHYNCWOMrg=="></script>
+
+
+
+
+    </body>
+</html>

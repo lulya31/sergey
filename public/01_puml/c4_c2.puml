@@ -1,0 +1,109 @@
+@startuml Container
+
+!include <C4/C4_Container>
+
+skinparam svgLinkTarget _blank 
+skinparam minClassWidth 200 
+skinparam wrapWidth 200 
+'skinparam linetype ortho 
+skinparam nodesep 75 
+skinparam backgroundColor transparent
+
+LAYOUT_TOP_DOWN() 
+
+AddRelTag("Async", $textColor="green", $lineColor="green", $lineStyle=BoldLine())
+AddRelTag("Not_Direct", $textColor="orange", $lineColor="orange", $lineStyle=BoldLine())
+
+Person(user, "Пользователь", "Пользователь FLORA состоящий в ФГ и обладающий ФО")
+
+System_Boundary(flora, "Flora") {
+
+    Container_Boundary(frontend, "FrontEnd") {
+        Container(core_app, "APP Core", "Vue.js", $descr="Основное приложение Flora", $sprite="img:https://doc-system-architecture-main.com-dev.int.rolfcorp.ru/05_02_01_img/flora_core_app3.png") 
+        Container(service_app, "APP Service", "Vue.js", $descr="Основные процессы сервиса", $sprite="img:https://doc-system-architecture-main.com-dev.int.rolfcorp.ru/05_02_01_img/frontend_service.png")
+    }
+
+    Container_Boundary(infrastructure, "Инфраструктура") {
+        Container(apim, "APIM", "Software System", $descr="Платформа управления REST интерфейсами приложений", $sprite="img:https://doc-system-architecture-main.com-dev.int.rolfcorp.ru/05_02_01_img/leroy_logo.png", $link="")
+        Container(centrifugo, "Centrifugo", "Real-time messaging server", $sprite="img:https://doc-system-architecture-main.com-dev.int.rolfcorp.ru/05_02_01_img/centrifugo_soc.png", $link="")
+    }
+
+    Container_Boundary(backend, "BackEnd") {
+        Container(service, "Communications", "MS:Platformeco", "Коммуникации, обращения, комментарии и заметки", $sprite="img:https://doc-system-architecture-main.com-dev.int.rolfcorp.ru/05_02_01_img/communications.png", $link="https://doc-communications-main.com-dev.int.rolfcorp.ru/03_methods/")
+        ContainerDb(db_request, "flora-clients-request", "DB: PostgreSQL", "Ханение данных для работы с сущностью Обращение", $sprite="img:https://doc-system-architecture-main.com-dev.int.rolfcorp.ru/05_02_01_img/postgressql.svg", $link="")
+        ContainerDb(db_communication, "flora-communications", "DB: PostgreSQL", "Хранение данных для работы с сущностью Коммуникация", $sprite="img:https://doc-system-architecture-main.com-dev.int.rolfcorp.ru/05_02_01_img/postgressql.svg", $link="")
+        ContainerDb(db_comments_and_annotations, "flora-comments-and-annotations", "DB: PostgreSQL", "Хранение данных для работы с сущностями Комментарии и Заметки", $sprite="img:https://doc-system-architecture-main.com-dev.int.rolfcorp.ru/05_02_01_img/postgressql.svg", $link="")
+    }
+
+    Container_Boundary(team_core, "Core") {
+        Container_Ext(orders, "ORDERS", "MS:Platformeco", "Потребности, предложения товаров или услуг, корзины и юридические события / документы", $sprite="img:https://doc-system-architecture-main.com-dev.int.rolfcorp.ru/05_02_01_img/orders.png", $link="https://doc-orders-main.com-dev.int.rolfcorp.ru/01_overview/") 
+        Container_Ext(rolf_id, "Rolf ID", "MS:Platformeco", "Информация о клиентах, сотрудниках, пользователях, диллерских центрах, организациях", $sprite="img:https://doc-system-architecture-main.com-dev.int.rolfcorp.ru/05_02_01_img/rolfid.png", $link="https://doc-rolfid-main.com-dev.int.rolfcorp.ru/")
+        Container_Ext(task_events, "Task & Events", "MS:Platformeco", "События, задачи, уведомления", $sprite="img:https://doc-system-architecture-main.com-dev.int.rolfcorp.ru/05_02_01_img/task_and_events.png", $link="https://doc-notifs-main.com-dev.int.rolfcorp.ru/")
+    }
+
+    Container_Ext(experience, "Experience сервисы", "MS:Platformeco", "Выполняют бизнес логику, специфичную для определенного домена, имплементируют BFF методы", $sprite="img:https://doc-system-architecture-main.com-dev.int.rolfcorp.ru/05_02_01_img/carid.png", $link="")
+    Container_Ext(internal, "Internal Integrations", "MS:Platformeco", "Сервис взаимодействия с внешними системами", $sprite="img:https://doc-system-architecture-main.com-dev.int.rolfcorp.ru/05_02_01_img/integration.png", $link="")
+
+}
+
+
+
+Container_Boundary(external_data, "Внешние источники данных") {
+    ContainerDb_Ext(oracle, "ORACLE", "DB:Oracle", "Внешний источник данных Oracle", $sprite="img:https://doc-system-architecture-main.com-dev.int.rolfcorp.ru/05_02_img/oracle.png", $link="")
+    Container_Ext(erl, "ЕРЛ", "PL/SQL APEX", "Единый рабочий лист", $sprite="img:https://doc-system-architecture-main.com-dev.int.rolfcorp.ru/05_02_01_img/pforms.png", $link="")
+    
+    Container_Ext(asterisk_service, "Asterisk AMI service (Rolf)", "Golang", "Сервис-оболочка. Разработан в Rolf поверх Asterisk", $sprite="img:https://doc-system-architecture-main.com-dev.int.rolfcorp.ru/05_02_img/asterisk_logo.png", $link="")
+
+
+    Container_Boundary(b_asterisk, "Asterisk"){
+        Container_Ext(asterisk, "Asterisk Manager Interface (AMI)", "API", "AMI, предоставляемый для внешних сервисов", $sprite="img:https://doc-system-architecture-main.com-dev.int.rolfcorp.ru/05_02_img/asterisk_logo.png", $link="")
+    }
+
+}
+
+
+
+' - - - - - - - - - - - - - - - - - - - - - -
+' Layout 
+
+Lay_D(service, apim)
+Lay_D(centrifugo, service)
+Lay_L(apim, internal)
+Lay_D(orders, rolf_id)
+Lay_D(rolf_id, task_events)
+Lay_D(service_app, internal)
+Lay_D(experience, apim)
+Lay_D(oracle, db_comments_and_annotations)
+Lay_U(asterisk, asterisk_service)
+Lay_D(internal, oracle)
+Lay_D(oracle, asterisk_service)
+
+
+' - - - - - - - - - - - - - - - - - - - - - -
+' Relations 
+
+AddRelTag("asynchronous_interaction", $textColor="green", $lineColor="green", $lineStyle=BoldLine())
+
+Rel_D(user, core_app, "Взаимодейстует") 
+Rel_R(service_app, core_app, "include")
+BiRel(frontend, apim, "Все необходимые запросы к API сервисов", "HTTPS:JSON")
+BiRel_U(service, apim, "Makes API calls", "HTTPS:JSON")
+
+Rel_D(service, db_request, "CRUD", "TCP:Binary")
+Rel_D(service, db_communication, "CRUD", "TCP:Binary")
+Rel_D(service, db_comments_and_annotations, "CRUD", "TCP:Binary")
+
+Rel(centrifugo, frontend, "Отправка сообщений", "WSS:JSON", $tags="asynchronous_interaction") 
+Rel(backend, centrifugo, "Отправка сообщений", "HTTPS:JSON")
+BiRel(internal, asterisk_service, "Makes API calls", "HTTPS:JSON")
+BiRel(asterisk_service, asterisk, "Makes API calls", "HTTPS:JSON")
+BiRel(apim, internal, "Makes API calls", "HTTPS:JSON")
+Rel(team_core, apim, "Makes API calls", "HTTPS:JSON")
+BiRel(experience, apim, "Makes API calls", "HTTPS:JSON")
+Rel(erl, oracle, "CRUD", "TCP:Binary")
+BiRel(apim, erl, "Makes API calls", "HTTPS:JSON")
+
+
+SHOW_LEGEND()
+
+@enduml

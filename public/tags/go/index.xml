@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on АТТЕСТАЦИЯ</title>
+    <link>http://localhost:1313/tags/go/</link>
+    <description>Recent content in Go on АТТЕСТАЦИЯ</description>
+    <generator>Hugo</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Mon, 22 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rest &amp; Soap &amp; grpc</title>
+      <link>http://localhost:1313/advanced/rest_soap/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/advanced/rest_soap/</guid>
+      <description>Go Back&#xA;1. Rest 2. SOAP 3. gRPC API (Application programming interface) — это контракт, который предоставляет программа. «Ко мне можно обращаться так и так, я обязуюсь делать то и это».&#xA;REST REST API — это архитектурный подход, который устанавливает ограничения для API: как они должны быть устроены и какие функции поддерживать.&#xA;Клиент-серверная модель (client-server model). Отсутствие состояния (statelessness). Кэширование (cacheability). Единообразие интерфейса (uniform interface). Многоуровневая система (layered system). Конечная точка – это адрес ресурса, который является пунктом доступа к системе извне.</description>
+    </item>
+  </channel>
+</rss>

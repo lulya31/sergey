@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="map[name:Hugo Authors]">
+<meta name="description" content="Go Back
+1. Docker 2. Dockerfile 3. Docker compose 4. K8s 5 Lens Docker это платформа для контейнеризации приложений, которая позволяет упаковать приложение и его зависимости в единый контейнер. Этот контейнер можно запустить на любой системе, поддерживающей Docker, и он будет работать идентично независимо от окружения.
+Образ (Image): Образ - это статический файл, содержащий все необходимое для запуска приложения, включая код, библиотеки и зависимости.
+Контейнер (Container): Контейнер - это экземпляр образа, который можно запустить и остановить." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/base/docker/" />
+
+
+    <title>
+        
+            Docker :: АТТЕСТАЦИЯ 
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="http://localhost:1313/main.949191c1dcc9c4a887997048b240354e47152016d821198f89448496ba42e491.css" integrity="sha256-lJGRwdzJxKiHmXBIskA1TkcVIBbYIRmPiUSElrpC5JE=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+    <link rel="manifest" href="http://localhost:1313/site.webmanifest">
+    <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="http://localhost:1313/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Docker">
+  <meta itemprop="description" content="Go Back
+1. Docker 2. Dockerfile 3. Docker compose 4. K8s 5 Lens Docker это платформа для контейнеризации приложений, которая позволяет упаковать приложение и его зависимости в единый контейнер. Этот контейнер можно запустить на любой системе, поддерживающей Docker, и он будет работать идентично независимо от окружения.
+Образ (Image): Образ - это статический файл, содержащий все необходимое для запуска приложения, включая код, библиотеки и зависимости.
+Контейнер (Container): Контейнер - это экземпляр образа, который можно запустить и остановить.">
+  <meta itemprop="datePublished" content="2024-07-22T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-22T00:00:00+00:00">
+  <meta itemprop="wordCount" content="916">
+  <meta itemprop="image" content="http://localhost:1313/">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Docker">
+  <meta name="twitter:description" content="Go Back
+1. Docker 2. Dockerfile 3. Docker compose 4. K8s 5 Lens Docker это платформа для контейнеризации приложений, которая позволяет упаковать приложение и его зависимости в единый контейнер. Этот контейнер можно запустить на любой системе, поддерживающей Docker, и он будет работать идентично независимо от окружения.
+Образ (Image): Образ - это статический файл, содержащий все необходимое для запуска приложения, включая код, библиотеки и зависимости.
+Контейнер (Container): Контейнер - это экземпляр образа, который можно запустить и остановить.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/base/docker/">
+  <meta property="og:site_name" content="АТТЕСТАЦИЯ">
+  <meta property="og:title" content="Docker">
+  <meta property="og:description" content="Go Back
+1. Docker 2. Dockerfile 3. Docker compose 4. K8s 5 Lens Docker это платформа для контейнеризации приложений, которая позволяет упаковать приложение и его зависимости в единый контейнер. Этот контейнер можно запустить на любой системе, поддерживающей Docker, и он будет работать идентично независимо от окружения.
+Образ (Image): Образ - это статический файл, содержащий все необходимое для запуска приложения, включая код, библиотеки и зависимости.
+Контейнер (Container): Контейнер - это экземпляр образа, который можно запустить и остановить.">
+  <meta property="og:locale" content="ru_ru">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="base">
+    <meta property="article:published_time" content="2024-07-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-22T00:00:00+00:00">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-07-22 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="http://localhost:1313/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">&gt;</span>
+            <span class="logo__text ">
+                Главная страница</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="http://localhost:1313/base/">Общие навыки</a></li><li><a href="http://localhost:1313/advanced/">Специализированные</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/base/docker/">Docker</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <hr>
+<blockquote>
+<p><a href="http://localhost:1313/base/"><em>Go Back</em></a></p>
+</blockquote>
+<hr>
+<h3 id="1-dockerdocker"><a href="#docker">1. Docker</a></h3>
+<h3 id="2-dockerfiledockerfile"><a href="#dockerfile">2. Dockerfile</a></h3>
+<h3 id="3-docker-composedocker-compose"><a href="#docker-compose">3. Docker compose</a></h3>
+<h3 id="4-k8sk8s"><a href="#k8s">4. K8s</a></h3>
+<h3 id="5-lenslens"><a href="#lens">5 Lens</a></h3>
+<hr>
+<h2 id="docker">Docker</h2>
+<p>это платформа для контейнеризации приложений, которая позволяет упаковать приложение и его зависимости в единый контейнер. Этот контейнер можно запустить на любой системе, поддерживающей Docker, и он будет работать идентично независимо от окружения.</p>
+<p><strong>Образ (Image):</strong> Образ - это статический файл, содержащий все необходимое для запуска приложения, включая код, библиотеки и зависимости.</p>
+<p><strong>Контейнер (Container):</strong> Контейнер - это экземпляр образа, который можно запустить и остановить.</p>
+<p><strong>Docker Hub:</strong> - это облачное хранилище образов Docker, которое позволяет делиться и загружать образы.</p>
+<h4 id="основные-команды-docker">Основные команды Docker</h4>
+<ol>
+<li>docker pull - для загрузки образа с Docker Hub.</li>
+<li>docker run - для запуска контейнера из образа.</li>
+<li>docker ps - выводит список запущенных контейнеров.</li>
+<li>docker stop - используется для остановки контейнера.</li>
+<li>docker rm - удаляет контейнер.</li>
+<li>docker images - выводит список загруженных образов.</li>
+</ol>
+<hr>
+<h2 id="docker-file">Docker File</h2>
+<p><em>Dockerfile</em> представляет из себя текстовый документ содержащий все команды для сборки образа.</p>
+<ul>
+<li><strong>FROM</strong> — задаёт базовый (родительский) образ.</li>
+<li><strong>LABEL</strong> — описывает метаданные. Например — сведения о том, кто создал и поддерживает образ.</li>
+<li><strong>ENV</strong> — устанавливает постоянные переменные среды.</li>
+<li><strong>RUN</strong> — выполняет команду и создаёт слой образа. Используется для установки в контейнер пакетов.</li>
+<li><strong>COPY</strong> — копирует в контейнер файлы и папки.</li>
+<li><strong>ADD</strong> — копирует файлы и папки в контейнер, может распаковывать локальные .tar-файлы.</li>
+<li><strong>CMD</strong> — описывает команду с аргументами, которую нужно выполнить когда контейнер будет запущен. Аргументы могут быть переопределены при запуске контейнера. В файле может присутствовать лишь одна инструкция CMD.</li>
+<li><strong>WORKDIR</strong> — задаёт рабочую директорию для следующей инструкции.</li>
+<li><strong>ARG</strong> — задаёт переменные для передачи Docker во время сборки образа.</li>
+<li><strong>ENTRYPOINT</strong> — предоставляет команду с аргументами для вызова во время выполнения контейнера. Аргументы не переопределяются.</li>
+<li><strong>EXPOSE</strong> — указывает на необходимость открыть порт.</li>
+<li><strong>VOLUME</strong> — создаёт точку монтирования для работы с постоянным хранилищем.</li>
+</ul>
+<hr>
+<h2 id="docker-compose">Docker Compose</h2>
+<p><em>Docker Compose</em> - это инструмент, который упрощает управление многоконтейнерными приложениями с использованием Docker. Он позволяет вам определить и настроить все контейнеры, сети и объемы для вашего приложения в одном файле конфигурации в формате YAML, а затем запустить их одной командой.</p>
+<p><strong>docker-compose up:</strong> Запускает приложение на основе файла docker-compose.yml. Если контейнеры не существуют, они будут созданы, и приложение будет запущено в фоновом режиме.</p>
+<p><strong>docker-compose down:</strong> Останавливает и удаляет все контейнеры, сети и объемы, связанные с приложением, определенным в файле docker-compose.yml.</p>
+<p><strong>docker-compose ps:</strong> Показывает статус всех сервисов, определенных в файле docker-compose.yml.</p>
+<p><strong>docker-compose logs:</strong> Отображает логи всех сервисов в реальном времени.</p>
+<blockquote>
+<h5 id="dockerfile">Dockerfile</h5>
+</blockquote>
+<p><img src="http://localhost:1313/docker/dockerfile.png" alt=""></p>
+<blockquote>
+<h5 id="docker-compose-1">Docker compose</h5>
+</blockquote>
+<p><img src="http://localhost:1313/docker/compose.png" alt=""></p>
+<blockquote>
+<h5 id="container">Container</h5>
+</blockquote>
+<p><img src="http://localhost:1313/docker/container.png" alt=""></p>
+<blockquote>
+<h5 id="docker-hub">Docker Hub</h5>
+</blockquote>
+<p><img src="http://localhost:1313/docker/hub.png" alt=""></p>
+<hr>
+<h2 id="k8s">K8s</h2>
+<p><strong>Kubernetes (K8s)</strong> — это программная платформа для автоматического управления контейнеризованными приложениями.</p>
+<p><em>Возможности Kubernetes</em></p>
+<ol>
+<li>
+<p><strong>Наблюдение за работой сервисов</strong>. Платформа позволяет следить как за отдельными приложениями, так и за всем кластером сразу. K8s имеет веб-интерфейс. Все данные о работе сервисов система предоставляет разработчику в интуитивно понятном виде.</p>
+</li>
+<li>
+<p><strong>Распределение нагрузки.</strong> Трафик, который потребляют контейнеры, может различаться. Это негативно влияет на развертывание приложений. Kubernetes автоматически отслеживает нагрузку в контейнерах, и если в каком-то из них обнаруживается высокий трафик, то платформа распределяет его между другими контейнерами.</p>
+</li>
+<li>
+<p><strong>Оркестрация хранилища.</strong> С помощью Kubernetes разработчик может выбрать систему хранения: локальное хранилище, облако и т.д. Платформа автоматически создаст ее и настроит под потребности проекта.</p>
+</li>
+<li>
+<p><strong>Развертывание и откаты</strong>. Платформа позволяет развертывать приложения в автоматическом и ручном режимах. Есть вариант канареечного развертывания, когда изменения, внесенные разработчиком, применяются только на некоторой части контейнеров. Такое решение позволяет осторожно тестировать обновления. Изменения можно автоматически откатить.</p>
+</li>
+<li>
+<p><strong>Самоконтроль</strong>. Если контейнер отказывает или сбоит, Kubernetes автоматически перезапускает или останавливает его. Освободившиеся ресурсы она распределяет на другие приложения. Система контролирует их работу в соответствии с критериями, заданными разработчиком. Если контейнер не соответствует им, платформа отключает его или заменяет на другой, а также скрывает от клиента, пока он не будет готов к обслуживанию.</p>
+</li>
+<li>
+<p><strong>Безопасность и конфиденциальность.</strong> Kubernetes может сохранять и контролировать конфиденциальные данные (пароли, ключи SSH, OAuth-токены), распределять права доступа к системе. Обновление и развертывание приложений не затрагивает образы контейнеров и не раскрывает секретные сведения в конфигурации стека.</p>
+</li>
+</ol>
+<p><strong>Основные объекты кластера Kubernetes</strong></p>
+<p><img src="https://blog.skillfactory.ru/wp-content/uploads/2023/02/kubernetes-2-7454350.png" alt=""></p>
+<ul>
+<li><strong>Nodes (ноды, узлы)</strong>
+Это физические или виртуальные машины, на которых развертываются и запускаются контейнеры с приложениями. Совокупность нод образует <strong>кластер</strong> Kubernetes.</li>
+</ul>
+<p><strong>Nodes бывают двух типов:</strong></p>
+<ul>
+<li>
+<p><strong>Master (мастер-нода)</strong> — узел, управляющий всем кластером. Он следит за остальными нодами и распределяет между ними нагрузку с помощью менеджера контроллеров (controller manager) и планировщика (scheduler).</p>
+</li>
+<li>
+<p><strong>Worker (рабочие ноды)</strong> — узлы, на которых работают контейнеры.</p>
+</li>
+</ul>
+<p><img src="https://blog.skillfactory.ru/wp-content/uploads/2023/02/kubernetes-3-9401197.png" alt=""></p>
+<ul>
+<li><strong>Pods (Поды)</strong></li>
+</ul>
+<p>Это абстрактный объект Kubernetes, представляющий собой «обертку» для одного или группы контейнеров. Контейнеры в поде запускаются и работают вместе, имеют общие сетевые ресурсы и хранилище. Kubernetes не управляет контейнерами напрямую, он собирает их в поды и работает с ими.
+<img src="https://blog.skillfactory.ru/wp-content/uploads/2023/02/kubernetes-4-2873366.png" alt=""></p>
+<p><strong>Основные компоненты кластера</strong>
+<img src="https://blog.skillfactory.ru/wp-content/uploads/2023/02/kubernetes-6-8004460.png" alt=""></p>
+<p><em>Компоненты</em> — это службы, модули и программы, обеспечивающие работу всего кластера. Они работают в нодах, то есть на виртуальных или физических серверах, где используется Kubernetes.</p>
+<p><strong>Кластер Kubernetes включает следующие компоненты:</strong></p>
+<ul>
+<li>
+<p><em>kube-apiserver.</em> С помощью сервера API обеспечивается работа API кластера, обрабатываются REST-операции и предоставляется интерфейс, через который остальные компоненты взаимодействуют друг с другом. Также через него проходят запросы на изменение состояния или чтение кластера. Работает на master-нодах;</p>
+</li>
+<li>
+<p><em>kube-scheduler.</em> Компонент, планирующий, на каких узлах разворачивать поды. Он учитывает такие факторы, как ограничения, требования к ресурсам, местонахождение данных и пр. Работает на master-нодах;</p>
+</li>
+<li>
+<p><em>etcd.</em> Распределенное хранилище в формате «ключ-значение». В нем хранится состояние всего кластера. Главная задача etcd — обеспечить отказоустойчивость кластера и консистентность данных. Etcd — самостоятельный проект. Он развивается отдельно от Kubernetes и применяется в разных продуктах. Работает на master-нодах;</p>
+</li>
+<li>
+<p><em>kube-proxy.</em> Служба, которая управляет правилами балансировки нагрузки. Она конфигурирует правила IPVS или iptables, через которые выполняются проксирование и роутинг. Работает на worker-нодах;</p>
+</li>
+<li>
+<p><em>kube-controller-manager.</em> Компонент запускает работу контроллеров. Работает на master-нодах;</p>
+</li>
+<li>
+<p><em>kubelet.</em> Cлужба, которая управляет состоянием ноды: запуском, остановкой и поддержанием работы контейнеров и подов. Работает на worker-нодах.</p>
+</li>
+</ul>
+<hr>
+<h2 id="lens">Lens</h2>
+<blockquote>
+<p><em>Настройка портов:</em></p>
+</blockquote>
+<p><img src="http://localhost:1313/lens_bd/lens.png" alt=""></p>
+<blockquote>
+<p><em>Локальное подключене к БД:</em></p>
+</blockquote>
+<p><img src="http://localhost:1313/lens_bd/bd.png" alt=""></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2024</span>
+            <span><a href="http://localhost:1313/"></a></span>
+            <span></span>
+            <span><a href="http://localhost:1313/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="http://localhost:1313/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

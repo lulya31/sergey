@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on АТТЕСТАЦИЯ</title>
+    <link>http://localhost:1313/about/</link>
+    <description>Recent content in Abouts on АТТЕСТАЦИЯ</description>
+    <generator>Hugo</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Mon, 22 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/about/docker/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/docker/</guid>
+      <description>Docker- это платформа для контейнеризации приложений, которая позволяет упаковать приложение и его зависимости в единый контейнер. Этот контейнер можно запустить на любой системе, поддерживающей Docker, и он будет работать идентично независимо от окружения.&#xA;Образ (Image): Образ - это статический файл, содержащий все необходимое для запуска приложения, включая код, библиотеки и зависимости.&#xA;Контейнер (Container): Контейнер - это экземпляр образа, который можно запустить и остановить.&#xA;Docker Hub: Docker Hub - это облачное хранилище образов Docker, которое позволяет делиться и загружать образы.</description>
+    </item>
+    <item>
+      <title>Env</title>
+      <link>http://localhost:1313/about/env/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/env/</guid>
+      <description>Переменные окружения — это набор значений, которые определяют поведение и настройки операционной системы, а также других программ, работающих в этой среде. Они могут быть использованы для хранения информации, которую используют различные приложения, и для настройки системных параметров. В веб-разработке они обычно используются для хранения секретных данных, таких как ключи API, пароли и других конфиденциальных данных.&#xA;Формат вывода очень простой: слева от знака равно расположено имя переменной, справа — значение.&#xA;Безопасность: Хранение секретных данных в переменных окружения позволяет избежать их случайного разглашения, так как они не включаются в исходный код вашего проекта.</description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>http://localhost:1313/about/git/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/git/</guid>
+      <description>Git — это система контроля версий, которая помогает отслеживать историю изменений в файлах.&#xA;1. gitignore:&#xA;Git рассматривает каждый файл в вашей рабочей копии как файл одного из трех нижеуказанных типов.&#xA;Отслеживаемый файл — файл, который был предварительно проиндексирован или зафиксирован в коммите.&#xA;Неотслеживаемый файл — файл, который не был проиндексирован или зафиксирован в коммите.&#xA;Игнорируемый файл — файл, явным образом помеченный для Git как файл, который необходимо игнорировать.&#xA;2. git clone:</description>
+    </item>
+    <item>
+      <title>Markdown и Asciidoc</title>
+      <link>http://localhost:1313/about/markdownasciidoc/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/markdownasciidoc/</guid>
+      <description>Языки разметки для редактирования текста Markdown Синтаксис языка:&#xA;Верстка сайта:&#xA;Asciidoc Синтаксис языка:&#xA;Верстка сайта:&#xA;Plantuml Синтаксис языка:&#xA;Верстка сайта:</description>
+    </item>
+    <item>
+      <title>Архитектура</title>
+      <link>http://localhost:1313/about/architecture/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bonus</title>
+      <link>http://localhost:1313/about/bonus/</link>
+      <pubDate>Sun, 21 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/bonus/</guid>
+      <description>SCORE S каки сейчас проблемы; C причины; O результаты к которым хочу прийти; R ресурсы чтобы добиться цели; E эффект что будет если решу проблему; Platformeco Тестовые задания:&#xA;Выполненые задания:&#xA;Git:&#xA;Node js </description>
+    </item>
+  </channel>
+</rss>

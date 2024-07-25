@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="map[name:Hugo Authors]">
+<meta name="description" content="Архитектура Layered (слоистая) архитектура — это структура проектирования программного обеспечения, в которой система разбивается на несколько слоев или уровней. Каждый слой выполняет определенную функциональность и обладает строго определенными отношениями с другими слоями. В этой архитектуре каждый слой является независимым и может быть изменен без влияния на другие слои.
+Принцип слоистой архитектуры состоит в том, чтобы разделить систему на отдельные уровни, где каждый уровень предоставляет определенные сервисы или функции. Обычно слоистая архитектура состоит из трех основных слоев: представления (presentation layer), бизнес-логики (business logic layer) и слоя доступа к данным (data access layer)." />
+<meta name="keywords" content=", go, golang, templates, themes, development" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/themes/architecture/" />
+
+
+    <title>
+        
+            Архитектура :: АТТЕСТАЦИЯ 
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="http://localhost:1313/main.949191c1dcc9c4a887997048b240354e47152016d821198f89448496ba42e491.css" integrity="sha256-lJGRwdzJxKiHmXBIskA1TkcVIBbYIRmPiUSElrpC5JE=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+    <link rel="manifest" href="http://localhost:1313/site.webmanifest">
+    <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="http://localhost:1313/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Архитектура">
+  <meta itemprop="description" content="Архитектура Layered (слоистая) архитектура — это структура проектирования программного обеспечения, в которой система разбивается на несколько слоев или уровней. Каждый слой выполняет определенную функциональность и обладает строго определенными отношениями с другими слоями. В этой архитектуре каждый слой является независимым и может быть изменен без влияния на другие слои.
+Принцип слоистой архитектуры состоит в том, чтобы разделить систему на отдельные уровни, где каждый уровень предоставляет определенные сервисы или функции. Обычно слоистая архитектура состоит из трех основных слоев: представления (presentation layer), бизнес-логики (business logic layer) и слоя доступа к данным (data access layer).">
+  <meta itemprop="datePublished" content="2024-07-22T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-22T00:00:00+00:00">
+  <meta itemprop="wordCount" content="679">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Go,Golang,Templates,Themes,Development">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/"><meta name="twitter:title" content="Архитектура">
+<meta name="twitter:description" content="Архитектура Layered (слоистая) архитектура — это структура проектирования программного обеспечения, в которой система разбивается на несколько слоев или уровней. Каждый слой выполняет определенную функциональность и обладает строго определенными отношениями с другими слоями. В этой архитектуре каждый слой является независимым и может быть изменен без влияния на другие слои.
+Принцип слоистой архитектуры состоит в том, чтобы разделить систему на отдельные уровни, где каждый уровень предоставляет определенные сервисы или функции. Обычно слоистая архитектура состоит из трех основных слоев: представления (presentation layer), бизнес-логики (business logic layer) и слоя доступа к данным (data access layer).">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/themes/architecture/">
+  <meta property="og:site_name" content="АТТЕСТАЦИЯ">
+  <meta property="og:title" content="Архитектура">
+  <meta property="og:description" content="Архитектура Layered (слоистая) архитектура — это структура проектирования программного обеспечения, в которой система разбивается на несколько слоев или уровней. Каждый слой выполняет определенную функциональность и обладает строго определенными отношениями с другими слоями. В этой архитектуре каждый слой является независимым и может быть изменен без влияния на другие слои.
+Принцип слоистой архитектуры состоит в том, чтобы разделить систему на отдельные уровни, где каждый уровень предоставляет определенные сервисы или функции. Обычно слоистая архитектура состоит из трех основных слоев: представления (presentation layer), бизнес-логики (business logic layer) и слоя доступа к данным (data access layer).">
+  <meta property="og:locale" content="ru-ru">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="themes">
+    <meta property="article:published_time" content="2024-07-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-22T00:00:00+00:00">
+    <meta property="article:tag" content="Go">
+    <meta property="article:tag" content="Golang">
+    <meta property="article:tag" content="Templates">
+    <meta property="article:tag" content="Themes">
+    <meta property="article:tag" content="Development">
+    <meta property="og:image" content="http://localhost:1313/">
+      <meta property="og:see_also" content="http://localhost:1313/themes/bd/">
+      <meta property="og:see_also" content="http://localhost:1313/themes/ddd/">
+      <meta property="og:see_also" content="http://localhost:1313/themes/resr_soap/">
+
+
+
+
+    <meta property="article:section" content="Development" />
+
+    <meta property="article:section" content="golang" />
+
+
+
+    <meta property="article:published_time" content="2024-07-22 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="http://localhost:1313/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">&gt;</span>
+            <span class="logo__text ">
+                $ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="http://localhost:1313/base/">Общие навыки</a></li><li><a href="http://localhost:1313/more/">Специализированные</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/themes/architecture/">Архитектура</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <h2 id="архитектура">Архитектура</h2>
+<p><strong>Layered (слоистая) архитектура</strong> — это структура проектирования программного обеспечения, в которой система разбивается <strong>на несколько слоев или уровней</strong>. Каждый слой выполняет определенную функциональность и обладает строго определенными отношениями с другими слоями. В этой архитектуре каждый слой является независимым и может быть изменен без влияния на другие слои.</p>
+<p>Принцип слоистой архитектуры состоит в том, чтобы <strong>разделить систему на отдельные уровни</strong>, где каждый уровень <strong>предоставляет определенные сервисы или функции</strong>. Обычно слоистая архитектура состоит из трех основных слоев: п<strong>редставления (presentation layer), бизнес-логики (business logic layer) и слоя доступа к данным (data access layer).</strong> Дополнительные слои могут быть добавлены в зависимости от требований системы.</p>
+<p><strong>Представление (Presentation layer):</strong> Этот слой отвечает за отображение пользовательского интерфейса и обработку пользовательского ввода. Он взаимодействует непосредственно с пользователем и предоставляет ему доступ к функциям и данным системы. Здесь могут использоваться различные технологии, такие как веб-интерфейсы, мобильные приложения, графические пользовательские интерфейсы и др.</p>
+<p><strong>Бизнес-логика (Business Logic layer):</strong> Этот слой содержит бизнес-логику приложения. Он отвечает за обработку бизнес-правил и логики системы. Здесь выполняются все операции, связанные с обработкой данных, вычислениями, взаимодействием с внешними системами и принятием решений на основе бизнес-правил. Этот слой независим от конкретного представления и слоя доступа к данным.</p>
+<p><strong>Слой доступа к данным (Data Access layer):</strong> Этот слой отвечает за доступ и управление данными системы. Он обеспечивает взаимодействие с базами данных, файловыми системами или другими источниками данных. Здесь выполняются операции чтения, записи, обновления и удаления данных. Слой доступа к данным скрыт от других слоев и предоставляет единый интерфейс для работы с данными системы.</p>
+<p>Одной из сильных сторон слоистой архитектуры является <strong>разделение задач (separation of concerns) между компонентами</strong>. Компоненты определённого слоя работают только с логикой, относящейся к этому слою.</p>
+<p>Также данная архитекутра придерживает ключевой концепции паттерна, известной как <strong>уровни изоляции</strong> (layers of isolation).
+Концепция изолированных слоев означает, что изменения, внесенные в один слой архитектуры, <strong>обычно не влияют на компоненты других слоев</strong>.
+Концепция изолированных слоев также означает, что каждый слой является независимым от других. Таким образом, он практически не знает о внутренней работе других слоев архитектуры</p>
+<p><img src="https://optim.tildacdn.com/tild6233-3934-4436-b665-346337633962/-/format/webp/1-2.png" alt=""></p>
+<h2 id="микросервисы-и-монолиты">Микросервисы и монолиты</h2>
+<h3 id="монолиты">Монолиты</h3>
+<p><img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/a4b/56d/f11/a4b56df116f96d649bdac18b43fa61a4.png" alt=""></p>
+<p><strong>Монолитная архитектура</strong> - это традиционный подход к построению программного обеспечения, при котором все компоненты приложения (пользовательский интерфейс, бизнес-логика и доступ к данным) объединены в единый неделимый модуль.</p>
+<p><em>Основные характеристики монолитной архитектуры:</em></p>
+<ul>
+<li>Единая кодовая база - весь код приложения находится в одном месте, что упрощает разработку, тестирование и отладку.</li>
+<li>Совместное использование данных -все компоненты приложения имеют доступ к одним и тем же данным в базе данных, что упрощает взаимодействие между ними.</li>
+<li>Развертывание как единого целого - монолитное приложение развертывается и масштабируется как единый блок.</li>
+</ul>
+<p><strong>Преимущества монолитной архитектуры</strong></p>
+<ul>
+<li>Простота разработки и тестирования;</li>
+<li>Эффективность и производительность;</li>
+<li>Удобство отладки, так как весь код находится в одном месте;</li>
+</ul>
+<p><strong>Недостатки монолитной архитектуры</strong></p>
+<ul>
+<li>Сложность масштабирования отдельных компонентов;</li>
+<li>Жесткая связанность компонентов, затрудняющая внесение изменений;</li>
+<li>Риск отказа всего приложения при сбое одного компонента;</li>
+</ul>
+<h3 id="микросервисы">Микросервисы</h3>
+<p><img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/2d9/168/b9e/2d9168b9e3e16cbe8b5d4da78a4ea0cc.png" alt=""></p>
+<p><strong>Микросервисная архитектура</strong> — это подход к разработке программного обеспечения, при котором приложение разбивается на небольшие, независимые сервисы, каждый из которых выполняет определённую бизнес-функцию. Эти сервисы взаимодействуют друг с другом через API, что позволяет им работать как единое целое, но при этом оставаться автономными.</p>
+<p><strong>Основные характеристики микросервисной архитектуры</strong>
+<em>Независимость</em>: Каждый микросервис разрабатывается, развертывается и масштабируется независимо от других. Это позволяет командам работать параллельно и вносить изменения без влияния на остальные части системы.
+<em>Технологическое разнообразие:</em> Разработчики могут использовать разные технологии и языки программирования для создания различных микросервисов, что позволяет выбрать наиболее подходящие инструменты для каждой задачи.
+<em>Масштабируемость:</em> Микросервисы могут быть масштабированы индивидуально, что позволяет более эффективно использовать ресурсы и оптимизировать производительность приложения.
+<em>Устойчивость:</em> Поскольку сервисы независимы, сбой одного из них не приводит к полному выходу из строя всего приложения. Это повышает общую надёжность системы.</p>
+<p><strong>Преимущества микросервисной архитектуры</strong>
+<em>Гибкость в разработке:</em> Команды могут быстро реагировать на изменения требований и внедрять новые функции.
+<em>Упрощение тестирования и развертывания:</em> Микросервисы могут быть протестированы и развернуты независимо, что упрощает процесс CI/CD (непрерывной интеграции и непрерывного развертывания).
+<em>Лучшая управляемость:</em> Каждой команде можно назначить ответственность за конкретный сервис, что упрощает управление проектом.</p>
+<p><strong>Недостатки микросервисной архитектуры</strong>
+<em>Сложность:</em> Управление множеством микросервисов требует дополнительных усилий для координации, мониторинга и обеспечения безопасности.
+<em>Сетевые задержки:</em> Взаимодействие между сервисами через сеть может привести к увеличению задержек и усложнению отладки.
+<em>Управление данными:</em> Распределённые данные могут усложнить управление состоянием и согласованностью.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/go/">go</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/golang/">golang</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/templates/">templates</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/themes/">themes</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/development/">development</a></span>
+        
+    </p>
+
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="http://localhost:1313/categories/development/">Development</a></span>
+        <span class="tag"><a href="http://localhost:1313/categories/golang/">golang</a></span>
+        
+    </p>
+
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2024</span>
+            <span><a href="http://localhost:1313/"></a></span>
+            <span></span>
+            <span><a href="http://localhost:1313/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="http://localhost:1313/bundle.min.85fad2de4f13fec3bcb3b3cb10430cdb44a7b4a9749b32938241a5c6e77718df7624f1002b880521fdc26e24ec1077fda214bf1cb36ee3045510760d09638cae.js" integrity="sha512-hfrS3k8T/sO8s7PLEEMM20SntKl0mzKTgkGlxud3GN92JPEAK4gFIf3CbiTsEHf9ohS/HLNu4wRVEHYNCWOMrg=="></script>
+
+
+
+
+    </body>
+</html>
